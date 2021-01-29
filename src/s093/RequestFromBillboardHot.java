@@ -66,7 +66,7 @@ public class RequestFromBillboardHot {
         for (int i = 0; i < htmls.size(); i++) {
             String ss = htmls.get(i);
             if (ss.contains(msg)) {
-                String rank = ss.substring(ss.indexOf("chart-row--".length());
+                String rank = ss.substring(ss.indexOf("chart-row--".length()));
                 rank = rank.substring(0, rank.indexOf("js") -1).trim();
                 String song = ss.substring(ss.indexOf("Song Hover-") + "Song Hover-".length());
                 song = song.substring(0, song.indexOf("\"")).trim();
